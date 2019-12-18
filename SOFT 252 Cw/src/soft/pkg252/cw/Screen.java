@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package soft.pkg252.cw;
 
-/**
- *
- * @author ohami
- */
 public class Screen extends javax.swing.JFrame {
     static Controller control;
     /**
