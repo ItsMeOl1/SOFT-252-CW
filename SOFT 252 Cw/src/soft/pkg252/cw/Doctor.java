@@ -22,6 +22,10 @@ public class Doctor extends User{
     public void GiveFeedback(String feedback){
         Feedback.add(feedback);
     }
+    
+    public void AddAppointment(Appointment app){
+        Appointments.add(app);
+    }
 
     public int getRating() {
         return Rating;

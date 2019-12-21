@@ -30,7 +30,7 @@ public class Appointment {
     }
 
     public void setNotes(String Notes) {
-        Appointment.Notes = Notes;
+        this.Notes = Notes;
     }
     
     
