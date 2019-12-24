@@ -4,21 +4,23 @@ import java.util.ArrayList;
 import  java.time.LocalDateTime;
 
 public class Patient extends User{
-    ArrayList<Appointment> History = new ArrayList<>();
-    ArrayList<Appointment> Appointments = new ArrayList<>();
-    ArrayList<Perscription> Perscriptions = new ArrayList<>();
-    public Patient(String uname, int passhash, String fname, String sname, Boolean gender, String addr, int idNumber){
+    static int currentID = 1; //used to create new patient ids
+    ArrayList<Appointment> History = new ArrayList<>(); //list is used so more appointments can be added easily
+    ArrayList<Appointment> Appointments = new ArrayList<>();//list is used so appointments can be added or removed easily
+    ArrayList<Perscription> Perscriptions = new ArrayList<>();//list is used so more perscriptions can be added easily
+    public Patient(String uname, int passhash, String fname, String sname,
+            Boolean gender, String addr){
         super(uname, passhash, fname, sname, gender, addr);
-        ID = "P" + idNumber;
+        ID = "P" + String.format("%04d", currentID); //making the int 4 digits long
     }
 
     public Object[] getHistory() {
-        UpdateAppointments();
+        UpdateAppointments(); //so the info is correct before returning it
         return History.toArray();
     }
 
     public ArrayList<Appointment> getAppointments() {
-        UpdateAppointments();
+        UpdateAppointments(); //so the info is correct before returning it
         return Appointments;
     }
 
@@ -30,13 +32,11 @@ public class Patient extends User{
         Perscriptions.add(per);
     }
     
-    
-    
     public void AddAppointment(Appointment app){
         Appointments.add(app);
     }
     
-    public void UpdateAppointments(){   
+    public void UpdateAppointments(){   //makes sure all appointments are in the correct list
         Appointments.forEach(                                       //For each item in Appointments
             (a) -> {                                                //call it a
                     if (a.getTime().isBefore(LocalDateTime.now())){ //if a is in the past

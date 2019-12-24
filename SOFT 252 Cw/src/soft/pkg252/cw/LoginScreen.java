@@ -2,13 +2,10 @@ package soft.pkg252.cw;
 
 public class LoginScreen extends javax.swing.JPanel {
     Controller control;
-    /**
-     * Creates new form LoginScreen
-     */
+    
     public LoginScreen(Controller c) {
         initComponents();
-        control = c;
-        //messageDigest = MessageDigest.getInstance("SHA-256");
+        control = c; //used to send data back tot he controller
     }
 
     @SuppressWarnings("unchecked")
@@ -83,7 +80,7 @@ public class LoginScreen extends javax.swing.JPanel {
     }//GEN-LAST:event_tbx_UsernameActionPerformed
 
     private void btn_LogInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_LogInActionPerformed
-        control.get_login(tbx_Username.getText(), String.valueOf(tbx_Password.getPassword()).hashCode());
+        control.get_login(tbx_Username.getText(), String.valueOf(tbx_Password.getPassword()).hashCode()); //when the login button is pressed send the username and hashed password to the controller
     }//GEN-LAST:event_btn_LogInActionPerformed
 
 

@@ -1,7 +1,7 @@
 package soft.pkg252.cw;
 
-public abstract class User {
-    int Password; 
+public abstract class User { //abstract becuase this should never be needed
+    int Password; //int as it is a hash
     String ID, Username, Forename, Surname, Address;
     Boolean Gender;
     public User(String uname, int passhash, String fname, String sname,
@@ -14,7 +14,7 @@ public abstract class User {
         Address = addr;
     }
     
-    public Boolean checkLogin(String username, int password){
+    public Boolean checkLogin(String username, int password){ //do the inputted login details match this user
         if (Username.equals(username) && Password == password){
             return true;
         }
