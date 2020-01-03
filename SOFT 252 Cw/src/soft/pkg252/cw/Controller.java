@@ -7,12 +7,13 @@ import javax.swing.*;
 public class Controller {  
     ArrayList<User> users = new ArrayList<>(); //List of all users
     User current_user = null; //what user is currently loged in
+    JFrame f;
     Controller()  
     {
         makeSomeUsers();    //populate the users list
         
-        JFrame f = new Screen(this);            
-        setScreen(f, new LoginScreen(this));
+        f = new Screen(this);            
+        setScreen(new LoginScreen(this));
         
     }  
 
@@ -20,6 +21,10 @@ public class Controller {
     {  
         new Controller();  
     } 
+    
+    public void goHome(){
+        if current_user.
+    }
     
     private void makeSomeUsers()
     { //For testing purposes the plaintext passwords are commented to the right
@@ -33,7 +38,7 @@ public class Controller {
         users.add(new Secretary("PheobeB",155148318,"Pheobe", "Boffay", false, "5 Morton Street")); //PForPheobe               
     }
     
-    private void setScreen(JFrame f, JPanel panel)     //change the frame to a predefined login panel
+    private void setScreen(JPanel panel)     //change the frame to a predefined login panel
     {
         f.setContentPane(panel);
         f.invalidate();     //Refreshes the JFrame so the changes show up
