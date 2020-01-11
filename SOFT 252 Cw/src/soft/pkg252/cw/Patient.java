@@ -12,6 +12,19 @@ public class Patient extends User{
             Boolean gender, String addr){
         super(uname, passhash, fname, sname, gender, addr);
         ID = "P" + String.format("%04d", currentID); //making the int 4 digits long
+        Type = 'p';
+        currentID++;
+    }
+    
+    public Patient(String uname, int passhash, String fname, String sname,
+            Boolean gender, String addr, String Id, ArrayList<Appointment> apps,
+            ArrayList<Appointment> hist, ArrayList<Perscription> pers){//used to load existing patients
+        super(uname, passhash, fname, sname, gender, addr);
+        ID = Id; //making the int 4 digits long
+        Type = 'p';
+        History = hist;
+        Appointments = apps;
+        Perscriptions = pers;
     }
 
     public Object[] getHistory() {

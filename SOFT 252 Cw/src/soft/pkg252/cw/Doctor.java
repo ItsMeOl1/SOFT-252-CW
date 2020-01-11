@@ -1,4 +1,5 @@
 package soft.pkg252.cw;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 public class Doctor extends User{
@@ -11,6 +12,20 @@ public class Doctor extends User{
             Boolean gender, String addr){
         super(uname, passhash, fname, sname, gender, addr);
         ID = "D" + String.format("%04d", currentID); //making the int 4 digits long
+        Type = 'd';
+        currentID++;
+    }
+    
+    public Doctor(String uname, int passhash, String fname, String sname,   //used in loading
+            Boolean gender, String addr, String Id, int rating, int noofratings, 
+            ArrayList<String> feedback, ArrayList<Appointment> apps){
+        super(uname, passhash, fname, sname, gender, addr);
+        ID = Id; //making the int 4 digits long
+        Type = 'd';
+        Rating = rating;
+        NoOfRatings = noofratings;
+        Feedback = feedback;
+        Appointments = apps;
     }
     
     public void Rate(int rating){ //works out the new average
@@ -26,6 +41,16 @@ public class Doctor extends User{
     
     public void AddAppointment(Appointment app){//like a setter but adds to the list instead
         Appointments.add(app);
+    }
+    
+    public void UpdateAppointments(){   //makes sure all appointments are in the correct list
+        Appointments.forEach(                                       //For each item in Appointments
+            (a) -> {                                                //call it a
+                    if (a.getTime().isBefore(LocalDateTime.now())){ //if a is in the past
+                        Appointments.remove(a);
+                    } 
+            }
+        );            
     }
 
     public int getRating() {

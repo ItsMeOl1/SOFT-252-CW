@@ -6,11 +6,19 @@ public class Appointment {
     Doctor Doctor;
     Patient Patient;
     String Notes;
-    public Appointment(LocalDateTime time, Doctor doc, Patient pat, String notes){
+    
+    public Appointment(LocalDateTime time, Doctor doc, Patient pat, String notes){ //used for loading appoinments
         Time = time;
         Doctor = doc;
         Patient = pat;
         Notes = notes;
+    }
+    
+    public Appointment(LocalDateTime time, Doctor doc, Patient pat){
+        Time = time;
+        Doctor = doc;
+        Patient = pat;
+        Notes = "";
     }
 
     public LocalDateTime getTime() {

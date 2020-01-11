@@ -9,6 +9,15 @@ public class Secretary extends User {
             Boolean gender, String addr){
         super(uname, passhash, fname, sname, gender, addr);
         ID = "S" + String.format("%04d", currentID); //format the int to 4 digits
+        Type = 's';
+        currentID++;
+    }
+    
+    public Secretary(String uname, int passhash, String fname, String sname,
+            Boolean gender, String addr, String Id){    //used to load existing secretarys
+        super(uname, passhash, fname, sname, gender, addr);
+        ID = Id; //format the int to 4 digits
+        Type = 's';
     }
     
     static void AddRequest(String request){

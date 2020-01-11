@@ -15,6 +15,9 @@ public abstract class User { //abstract becuase this should never be needed
         Address = addr;
     }
     
+    public User(){
+    }
+    
     public Boolean checkLogin(String username, int password){ //do the inputted login details match this user
         if (Username.equals(username) && Password == password){
             return true;

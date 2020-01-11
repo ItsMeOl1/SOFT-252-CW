@@ -6,5 +6,14 @@ public class Administrator extends User {
             Boolean gender, String addr){
         super(uname, passhash, fname, sname, gender, addr);
         ID = "A" + String.format("%04d", currentID); //making the int 4 digits long
+        Type = 'a';
+        currentID++;
+    }
+    
+    public Administrator(String uname, int passhash, String fname, String sname,
+            Boolean gender, String addr, String Id){    //used for loading admins
+        super(uname, passhash, fname, sname, gender, addr);
+        ID = Id;
+        Type = 'a';
     }
 }
