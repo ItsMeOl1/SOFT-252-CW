@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="soft.pkg252.cw">
+  <ClassDiagramComponents>
+    <Class name="AddAppointmentPage" package="soft.pkg252.cw" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="page" type="javax.swing.JPanel" visibility="package"/>
+        <Field name="control" type="Controller" visibility="package"/>
+        <Field name="creator" type="char" visibility="package"/>
+        <Field name="btn_Cancel" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Create" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane2" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lbl_Patient" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lst_Doctors" type="javax.swing.JList&lt;String&gt;" visibility="private"/>
+        <Field name="lst_Patients" type="javax.swing.JList&lt;String&gt;" visibility="private"/>
+        <Field name="tbx_Date" type="javax.swing.JFormattedTextField" visibility="private"/>
+        <Field name="tbx_Time" type="javax.swing.JFormattedTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Controller" name="c"/>
+          <Argument type="char" name="u"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="updateDoctors" returnType="void" visibility="private"/>
+        <Method name="updatePatients" returnType="void" visibility="private"/>
+        <Method name="btn_CreateActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_CancelActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="AddMedicinePage" package="soft.pkg252.cw" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="control" type="Controller" visibility="package"/>
+        <Field name="btn_Cancel" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Request" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="tbx_Name" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Controller" name="c"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btn_RequestActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_CancelActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="AddPatientPage" package="soft.pkg252.cw" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="control" type="Controller" visibility="package"/>
+        <Field name="creator" type="String" visibility="package"/>
+        <Field name="btn_Cancel" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Create" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btng_Gender" type="javax.swing.ButtonGroup" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lbl_PatientInfo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="rdo_Female" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="rdo_Male" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="tbx_Address" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tbx_Forename" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tbx_GivenInfo" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="tbx_Password" type="javax.swing.JPasswordField" visibility="private"/>
+        <Field name="tbx_Surname" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tbx_Username" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Controller" name="c"/>
+          <Argument type="String" name="patientInfo"/>
+          <Argument type="String" name="user"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btn_CreateActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_CancelActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="AddPerscriptionPage" package="soft.pkg252.cw" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="control" type="Controller" visibility="package"/>
+        <Field name="btn_Apply" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Cancel" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_NewMed" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cbb_Med" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="cbb_Patient" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jComboBox1" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane2" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTextField1" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tbx_End" type="javax.swing.JFormattedTextField" visibility="private"/>
+        <Field name="tbx_Notes" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="tbx_Start" type="javax.swing.JFormattedTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Controller" name="c"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btn_ApplyActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="updateMed" returnType="void" visibility="private"/>
+        <Method name="updatePatients" returnType="void" visibility="private"/>
+        <Method name="btn_CancelActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_NewMedActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="AddStaffPage" package="soft.pkg252.cw" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="control" type="Controller" visibility="package"/>
+        <Field name="btn_Cancel" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Create" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btng_Gender" type="javax.swing.ButtonGroup" visibility="private"/>
+        <Field name="cbb_StaffType" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="rdo_Female" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="rdo_Male" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="tbx_Address" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tbx_Forename" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tbx_Password" type="javax.swing.JPasswordField" visibility="private"/>
+        <Field name="tbx_Surname" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tbx_Username" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Controller" name="c"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btn_CreateActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_CancelActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Administrator" package="soft.pkg252.cw" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="currentID" type="int" visibility="package" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="uname"/>
+          <Argument type="int" name="passhash"/>
+          <Argument type="String" name="fname"/>
+          <Argument type="String" name="sname"/>
+          <Argument type="Boolean" name="gender"/>
+          <Argument type="String" name="addr"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="uname"/>
+          <Argument type="int" name="passhash"/>
+          <Argument type="String" name="fname"/>
+          <Argument type="String" name="sname"/>
+          <Argument type="Boolean" name="gender"/>
+          <Argument type="String" name="addr"/>
+          <Argument type="String" name="Id"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="AdminPage" package="soft.pkg252.cw" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="control" type="Controller" visibility="package"/>
+        <Field name="btn_CreateUser" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_DeleteUser" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_LogOut" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_SumbitFeedback" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane2" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane3" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lbl_Stars" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lst_Comments" type="javax.swing.JList&lt;String&gt;" visibility="private"/>
+        <Field name="lst_Users" type="javax.swing.JList&lt;String&gt;" visibility="private"/>
+        <Field name="tbx_Feedback" type="javax.swing.JTextArea" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Controller" name="c"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btn_LogOutActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_SumbitFeedbackActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_CreateUserActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_DeleteUserActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="lst_UsersValueChanged" returnType="void" visibility="private">
+          <Argument type="javax.swing.event.ListSelectionEvent" name="evt"/>
+        </Method>
+        <Method name="updateStaff" returnType="void" visibility="private"/>
+        <Method name="updateStats" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="Appointment" package="soft.pkg252.cw" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="Time" type="LocalDateTime" visibility="package"/>
+        <Field name="Doctor" type="Doctor" visibility="package"/>
+        <Field name="Patient" type="Patient" visibility="package"/>
+        <Field name="Notes" type="String" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="LocalDateTime" name="time"/>
+          <Argument type="Doctor" name="doc"/>
+          <Argument type="Patient" name="pat"/>
+          <Argument type="String" name="notes"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="LocalDateTime" name="time"/>
+          <Argument type="Doctor" name="doc"/>
+          <Argument type="Patient" name="pat"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getTime" returnType="LocalDateTime" visibility="public"/>
+        <Method name="getDoc" returnType="Doctor" visibility="public"/>
+        <Method name="getPat" returnType="Patient" visibility="public"/>
+        <Method name="getNotes" returnType="String" visibility="public"/>
+        <Method name="setNotes" returnType="void" visibility="public">
+          <Argument type="String" name="Notes"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Controller" package="soft.pkg252.cw" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="users" type="ArrayList&lt;User&gt;" visibility="public"/>
+        <Field name="current_user" type="User" visibility="package"/>
+        <Field name="f" type="JFrame" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package"/>
+      </Constructors>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="goHome" returnType="//go to the home page for the current logged in user type
+void" visibility="public"/>
+        <Method name="makeSomeUsers" returnType="//used for testing only
+void" visibility="private"/>
+        <Method name="setScreen" returnType="//change the frame to a predefined login panel
+void" visibility="public">
+          <Argument type="JPanel" name="panel"/>
+        </Method>
+        <Method name="logOut" returnType="//go back to login screen
+void" visibility="public"/>
+        <Method name="getLogin" returnType="//Used when the login button is clicked in the login screen
+void" visibility="public">
+          <Argument type="String" name="user"/>
+          <Argument type="Integer" name="pass"/>
+        </Method>
+        <Method name="addMedicine" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="createAppointment" returnType="void" visibility="public">
+          <Argument type="Doctor" name="doc"/>
+          <Argument type="Patient" name="pat"/>
+          <Argument type="LocalDateTime" name="time"/>
+        </Method>
+        <Method name="orderMed" returnType="void" visibility="public">
+          <Argument type="String" name="med"/>
+          <Argument type="int" name="quantity"/>
+        </Method>
+        <Method name="createPerscription" returnType="void" visibility="public">
+          <Argument type="Patient" name="pat"/>
+          <Argument type="String" name="med"/>
+          <Argument type="Date" name="start"/>
+          <Argument type="Date" name="end"/>
+          <Argument type="String" name="notes"/>
+        </Method>
+        <Method name="create_Admin" returnType="//Create a administrator
+void" visibility="public">
+          <Argument type="String" name="username"/>
+          <Argument type="int" name="password"/>
+          <Argument type="String" name="firstname"/>
+          <Argument type="String" name="surname"/>
+          <Argument type="Boolean" name="gender"/>
+          <Argument type="String" name="address"/>
+        </Method>
+        <Method name="create_Doctor" returnType="//Create a doctor
+void" visibility="public">
+          <Argument type="String" name="username"/>
+          <Argument type="int" name="password"/>
+          <Argument type="String" name="firstname"/>
+          <Argument type="String" name="surname"/>
+          <Argument type="Boolean" name="gender"/>
+          <Argument type="String" name="address"/>
+        </Method>
+        <Method name="create_Patient" returnType="//Create a patient
+void" visibility="public">
+          <Argument type="String" name="username"/>
+          <Argument type="int" name="password"/>
+          <Argument type="String" name="firstname"/>
+          <Argument type="String" name="surname"/>
+          <Argument type="Boolean" name="gender"/>
+          <Argument type="String" name="address"/>
+        </Method>
+        <Method name="create_Secretary" returnType="//Create a scretary
+void" visibility="public">
+          <Argument type="String" name="username"/>
+          <Argument type="int" name="password"/>
+          <Argument type="String" name="firstname"/>
+          <Argument type="String" name="surname"/>
+          <Argument type="Boolean" name="gender"/>
+          <Argument type="String" name="address"/>
+        </Method>
+        <Method name="load_Admin" returnType="//load a administrator
+void" visibility="public">
+          <Argument type="String" name="username"/>
+          <Argument type="int" name="password"/>
+          <Argument type="String" name="firstname"/>
+          <Argument type="String" name="surname"/>
+          <Argument type="Boolean" name="gender"/>
+          <Argument type="String" name="address"/>
+          <Argument type="String" name="ID"/>
+        </Method>
+        <Method name="load_Doctor" returnType="//load a doctor
+void" visibility="public">
+          <Argument type="String" name="username"/>
+          <Argument type="int" name="password"/>
+          <Argument type="String" name="firstname"/>
+          <Argument type="String" name="surname"/>
+          <Argument type="Boolean" name="gender"/>
+          <Argument type="String" name="address"/>
+          <Argument type="String" name="ID"/>
+          <Argument type="int" name="rating"/>
+          <Argument type="int" name="NoOfRatings"/>
+          <Argument type="ArrayList&lt;String&gt;" name="feedback"/>
+          <Argument type="ArrayList&lt;Appointment&gt;" name="appointments"/>
+        </Method>
+        <Method name="load_Patient" returnType="//load a patient
+void" visibility="public">
+          <Argument type="String" name="username"/>
+          <Argument type="int" name="password"/>
+          <Argument type="String" name="firstname"/>
+          <Argument type="String" name="surname"/>
+          <Argument type="Boolean" name="gender"/>
+          <Argument type="String" name="address"/>
+          <Argument type="String" name="ID"/>
+          <Argument type="ArrayList&lt;Appointment&gt;" name="apps"/>
+          <Argument type="ArrayList&lt;Appointment&gt;" name="hist"/>
+          <Argument type="ArrayList&lt;Perscription&gt;" name="pers"/>
+        </Method>
+        <Method name="load_Secretary" returnType="//load a scretary
+void" visibility="public">
+          <Argument type="String" name="username"/>
+          <Argument type="int" name="password"/>
+          <Argument type="String" name="firstname"/>
+          <Argument type="String" name="surname"/>
+          <Argument type="Boolean" name="gender"/>
+          <Argument type="String" name="address"/>
+          <Argument type="String" name="ID"/>
+        </Method>
+        <Method name="save" returnType="void" visibility="public"/>
+        <Method name="load" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Doctor" package="soft.pkg252.cw" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields>
+        <Field name="currentID" type="int" visibility="package" isStatic="true"/>
+        <Field name="Rating" type="int" visibility="package"/>
+        <Field name="Feedback" type="ArrayList&lt;String&gt;" visibility="package"/>
+        <Field name="Appointments" type="ArrayList&lt;Appointment&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="uname"/>
+          <Argument type="int" name="passhash"/>
+          <Argument type="String" name="fname"/>
+          <Argument type="String" name="sname"/>
+          <Argument type="Boolean" name="gender"/>
+          <Argument type="String" name="addr"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="uname"/>
+          <Argument type="int" name="passhash"/>
+          <Argument type="String" name="fname"/>
+          <Argument type="String" name="sname"/>
+          <Argument type="Boolean" name="gender"/>
+          <Argument type="String" name="addr"/>
+          <Argument type="String" name="Id"/>
+          <Argument type="int" name="rating"/>
+          <Argument type="int" name="noofratings"/>
+          <Argument type="ArrayList&lt;String&gt;" name="feedback"/>
+          <Argument type="ArrayList&lt;Appointment&gt;" name="apps"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="Rate" returnType="void" visibility="public">
+          <Argument type="int" name="rating"/>
+        </Method>
+        <Method name="GiveFeedback" returnType="void" visibility="public">
+          <Argument type="String" name="feedback"/>
+        </Method>
+        <Method name="AddAppointment" returnType="void" visibility="public">
+          <Argument type="Appointment" name="app"/>
+        </Method>
+        <Method name="UpdateAppointments" returnType="void" visibility="public"/>
+        <Method name="getRating" returnType="int" visibility="public"/>
+        <Method name="getNoOfRatings" returnType="int" visibility="public"/>
+        <Method name="getFeedback" returnType="ArrayList&lt;String&gt;" visibility="public"/>
+        <Method name="getAppointments" returnType="ArrayList&lt;Appointment&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DoctorPage" package="soft.pkg252.cw" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields>
+        <Field name="control" type="Controller" visibility="package"/>
+        <Field name="doc" type="Doctor" visibility="package"/>
+        <Field name="btn_Inspect" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_LogOut" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_NewAppointment" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Perscribe" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane4" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane5" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane6" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTextPane1" type="javax.swing.JTextPane" visibility="private"/>
+        <Field name="lst_Appointments" type="javax.swing.JList&lt;String&gt;" visibility="private"/>
+        <Field name="tbx_Notes" type="javax.swing.JTextPane" visibility="private"/>
+        <Field name="tbx_Patient" type="javax.swing.JTextPane" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Controller" name="c"/>
+          <Argument type="Doctor" name="d"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btn_NewAppointmentActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="lst_AppointmentsValueChanged" returnType="void" visibility="private">
+          <Argument type="javax.swing.event.ListSelectionEvent" name="evt"/>
+        </Method>
+        <Method name="updateAppointments" returnType="void" visibility="private"/>
+        <Method name="updatePatient" returnType="void" visibility="private">
+          <Argument type="Patient" name="pat"/>
+        </Method>
+        <Method name="updateNotes" returnType="void" visibility="private">
+          <Argument type="String" name="notes"/>
+        </Method>
+        <Method name="btn_PerscribeActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_LogOutActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_InspectActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="GivePerscriptionPage" package="soft.pkg252.cw" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields>
+        <Field name="control" type="Controller" visibility="package"/>
+        <Field name="btn_Cancel" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Give" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_OK" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cbb_Patient" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="cbb_Perscription" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="dlg_OutOfStock" type="javax.swing.JDialog" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Controller" name="c"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btn_GiveActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_CancelActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="cbb_PatientItemStateChanged" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ItemEvent" name="evt"/>
+        </Method>
+        <Method name="btn_OKActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="updatePerscriptions" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="InspectPatientPage" package="soft.pkg252.cw" visibility="public" xPosition="1220.0" yPosition="420.0">
+      <Fields>
+        <Field name="control" type="Controller" visibility="package"/>
+        <Field name="patient" type="Patient" visibility="package"/>
+        <Field name="btn_OK" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane2" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lbl_Address" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Gender" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Name" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lst_History" type="javax.swing.JList&lt;String&gt;" visibility="private"/>
+        <Field name="tbx_AppointmentNotes" type="javax.swing.JTextPane" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Controller" name="c"/>
+          <Argument type="Patient" name="p"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="updateHistory" returnType="void" visibility="private"/>
+        <Method name="lst_HistoryValueChanged" returnType="void" visibility="private">
+          <Argument type="javax.swing.event.ListSelectionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_OKActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="JSONController" package="soft.pkg252.cw" visibility="public" xPosition="1520.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="makeJSON" returnType="void" visibility="public" isStatic="true">
+          <Argument type="ArrayList&lt;User&gt;" name="users"/>
+          <Argument type="String[]" name="perscriptions"/>
+          <Argument type="int[]" name="medStock"/>
+          <Argument type="ArrayList&lt;String&gt;" name="requests"/>
+        </Method>
+        <Method name="readJSON" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Controller" name="control"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="LoginScreen" package="soft.pkg252.cw" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields>
+        <Field name="control" type="Controller" visibility="package"/>
+        <Field name="btn_LogIn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="tbx_Password" type="javax.swing.JPasswordField" visibility="private"/>
+        <Field name="tbx_Username" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Controller" name="c"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="tbx_UsernameActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_LogInActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="OrderMedPage" package="soft.pkg252.cw" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields>
+        <Field name="control" type="Controller" visibility="package"/>
+        <Field name="btn_Cancel" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Order" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cbb_Medicine" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Stock" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="tbx_Quantity" type="javax.swing.JFormattedTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Controller" name="c"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btn_OrderActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_CancelActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="cbb_MedicineItemStateChanged" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ItemEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Patient" package="soft.pkg252.cw" visibility="public" xPosition="20.0" yPosition="820.0">
+      <Fields>
+        <Field name="currentID" type="int" visibility="package" isStatic="true"/>
+        <Field name="History" type="ArrayList&lt;Appointment&gt;" visibility="package"/>
+        <Field name="Appointments" type="ArrayList&lt;Appointment&gt;" visibility="package"/>
+        <Field name="Perscriptions" type="ArrayList&lt;Perscription&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="uname"/>
+          <Argument type="int" name="passhash"/>
+          <Argument type="String" name="fname"/>
+          <Argument type="String" name="sname"/>
+          <Argument type="Boolean" name="gender"/>
+          <Argument type="String" name="addr"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="uname"/>
+          <Argument type="int" name="passhash"/>
+          <Argument type="String" name="fname"/>
+          <Argument type="String" name="sname"/>
+          <Argument type="Boolean" name="gender"/>
+          <Argument type="String" name="addr"/>
+          <Argument type="String" name="Id"/>
+          <Argument type="ArrayList&lt;Appointment&gt;" name="apps"/>
+          <Argument type="ArrayList&lt;Appointment&gt;" name="hist"/>
+          <Argument type="ArrayList&lt;Perscription&gt;" name="pers"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getHistory" returnType="Object[]" visibility="public"/>
+        <Method name="getAppointments" returnType="ArrayList&lt;Appointment&gt;" visibility="public"/>
+        <Method name="getPerscriptions" returnType="ArrayList&lt;Perscription&gt;" visibility="public"/>
+        <Method name="AddPerscriptions" returnType="void" visibility="public">
+          <Argument type="Perscription" name="per"/>
+        </Method>
+        <Method name="AddAppointment" returnType="void" visibility="public">
+          <Argument type="Appointment" name="app"/>
+        </Method>
+        <Method name="UpdateAppointments" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PatientPage" package="soft.pkg252.cw" visibility="public" xPosition="320.0" yPosition="820.0">
+      <Fields>
+        <Field name="control" type="Controller" visibility="package"/>
+        <Field name="btn_Appointment" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Doctor" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_LogOut" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane2" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane3" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lst_Appointments" type="javax.swing.JList&lt;String&gt;" visibility="private"/>
+        <Field name="lst_History" type="javax.swing.JList&lt;String&gt;" visibility="private"/>
+        <Field name="lst_Perscriptions" type="javax.swing.JList&lt;String&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Controller" name="c"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btn_AppointmentActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_DoctorActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_LogOutActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Perscription" package="soft.pkg252.cw" visibility="public" xPosition="620.0" yPosition="820.0">
+      <Fields>
+        <Field name="Medication" type="String" visibility="package"/>
+        <Field name="Start" type="Date" visibility="package"/>
+        <Field name="Given" type="boolean" visibility="package"/>
+        <Field name="medications" type="String[]" visibility="private" isStatic="true"/>
+        <Field name="medStock" type="int[]" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="med"/>
+          <Argument type="Date" name="start"/>
+          <Argument type="Date" name="end"/>
+          <Argument type="String" name="notes"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="orderMedicine" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="quantity"/>
+        </Method>
+        <Method name="giveMedicine" returnType="void" visibility="public" isStatic="true">
+          <Argument type="int" name="Index"/>
+        </Method>
+        <Method name="addMedicine" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getMedication" returnType="String" visibility="public"/>
+        <Method name="getMedStock" returnType="int[]" visibility="public" isStatic="true"/>
+        <Method name="getNotes" returnType="String" visibility="public"/>
+        <Method name="getStart" returnType="Date" visibility="public"/>
+        <Method name="getEnd" returnType="Date" visibility="public"/>
+        <Method name="getMedications" returnType="String[]" visibility="public" isStatic="true"/>
+        <Method name="isGiven" returnType="boolean" visibility="public"/>
+        <Method name="loadMedicine" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="meds"/>
+          <Argument type="int[]" name="stock"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Screen" package="soft.pkg252.cw" visibility="public" xPosition="920.0" yPosition="820.0">
+      <Fields>
+        <Field name="control" type="Controller" visibility="package" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Controller" name="c"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Secretary" package="soft.pkg252.cw" visibility="public" xPosition="1220.0" yPosition="820.0">
+      <Fields>
+        <Field name="currentID" type="int" visibility="package" isStatic="true"/>
+        <Field name="Requests" type="ArrayList&lt;String&gt;" visibility="package" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="uname"/>
+          <Argument type="int" name="passhash"/>
+          <Argument type="String" name="fname"/>
+          <Argument type="String" name="sname"/>
+          <Argument type="Boolean" name="gender"/>
+          <Argument type="String" name="addr"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="uname"/>
+          <Argument type="int" name="passhash"/>
+          <Argument type="String" name="fname"/>
+          <Argument type="String" name="sname"/>
+          <Argument type="Boolean" name="gender"/>
+          <Argument type="String" name="addr"/>
+          <Argument type="String" name="Id"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="AddRequest" returnType="void" visibility="package" isStatic="true">
+          <Argument type="String" name="request"/>
+        </Method>
+        <Method name="getRequests" returnType="ArrayList&lt;String&gt;" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="SecretaryPage" package="soft.pkg252.cw" visibility="public" xPosition="1520.0" yPosition="820.0">
+      <Fields>
+        <Field name="control" type="Controller" visibility="package"/>
+        <Field name="btn_CompleteRequest" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_CreateAppointment" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_CreatePatient" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_GivePerscription" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Logout" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Order" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_RemovePatient" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cbb_PatientRem" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lst_Requests" type="javax.swing.JList&lt;String&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Controller" name="c"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="updateRequests" returnType="void" visibility="private"/>
+        <Method name="updatePatients" returnType="void" visibility="private"/>
+        <Method name="btn_OrderActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_CompleteRequestActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_CreatePatientActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_CreateAppointmentActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_GivePerscriptionActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_RemovePatientActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_LogoutActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ShutdownHook" package="soft.pkg252.cw" visibility="public" xPosition="1820.0" yPosition="820.0">
+      <Fields>
+        <Field name="control" type="Controller" visibility="package" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="run" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Controller" name="c"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Tests" package="soft.pkg252.cw" visibility="public" xPosition="2120.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="UserTest" returnType="void" visibility="public"/>
+        <Method name="AdminTest" returnType="void" visibility="public"/>
+        <Method name="DoctorTest" returnType="void" visibility="public"/>
+        <Method name="PatientTest" returnType="void" visibility="public"/>
+        <Method name="SecretaryTest" returnType="void" visibility="public"/>
+        <Method name="AppointmentTest" returnType="void" visibility="public"/>
+        <Method name="PerscripotionTest" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="User" package="soft.pkg252.cw" visibility="public" isAbstract="true" xPosition="20.0" yPosition="1220.0">
+      <Fields>
+        <Field name="Password" type="int" visibility="package"/>
+        <Field name="ID" type="String" visibility="package"/>
+        <Field name="Type" type="char" visibility="package"/>
+        <Field name="Gender" type="Boolean" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="uname"/>
+          <Argument type="int" name="passhash"/>
+          <Argument type="String" name="fname"/>
+          <Argument type="String" name="sname"/>
+          <Argument type="Boolean" name="gender"/>
+          <Argument type="String" name="addr"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="checkLogin" returnType="Boolean" visibility="public">
+          <Argument type="String" name="username"/>
+          <Argument type="int" name="password"/>
+        </Method>
+        <Method name="getID" returnType="String" visibility="public"/>
+        <Method name="getForename" returnType="String" visibility="public"/>
+        <Method name="getSurname" returnType="String" visibility="public"/>
+        <Method name="getAddress" returnType="String" visibility="public"/>
+        <Method name="getType" returnType="char" visibility="public"/>
+        <Method name="getGender" returnType="Boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ViewDoctorPage" package="soft.pkg252.cw" visibility="public" xPosition="320.0" yPosition="1220.0">
+      <Fields>
+        <Field name="control" type="Controller" visibility="package"/>
+        <Field name="btn_Cancel" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btn_Sumbit" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane2" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lbl_Rating" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_Stars" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lst_Doctors" type="javax.swing.JList&lt;String&gt;" visibility="private"/>
+        <Field name="sld_Rate" type="javax.swing.JSlider" visibility="private"/>
+        <Field name="tbx_Feedback" type="javax.swing.JTextArea" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Controller" name="c"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="sld_RatePropertyChange" returnType="void" visibility="private">
+          <Argument type="java.beans.PropertyChangeEvent" name="evt"/>
+        </Method>
+        <Method name="btn_SumbitActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn_CancelActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="lst_DoctorsValueChanged" returnType="void" visibility="private">
+          <Argument type="javax.swing.event.ListSelectionEvent" name="evt"/>
+        </Method>
+        <Method name="updateDoctors" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="soft.pkg252.cw.Controller" target="soft.pkg252.cw.Perscription" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Doctor" source="soft.pkg252.cw.Appointment" target="soft.pkg252.cw.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="users" source="soft.pkg252.cw.Controller" target="soft.pkg252.cw.User" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;User&gt;"/>
+    <IsRelation name="is" source="soft.pkg252.cw.Patient" target="soft.pkg252.cw.User"/>
+    <HasRelation name="control" source="soft.pkg252.cw.AddPatientPage" target="soft.pkg252.cw.Controller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="control" source="soft.pkg252.cw.OrderMedPage" target="soft.pkg252.cw.Controller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="control" source="soft.pkg252.cw.AddAppointmentPage" target="soft.pkg252.cw.Controller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="soft.pkg252.cw.Appointment" target="soft.pkg252.cw.Doctor" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="control" source="soft.pkg252.cw.AddPerscriptionPage" target="soft.pkg252.cw.Controller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="control" source="soft.pkg252.cw.Screen" target="soft.pkg252.cw.Controller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="soft.pkg252.cw.Secretary" target="soft.pkg252.cw.User"/>
+    <UseRelation source="soft.pkg252.cw.JSONController" target="soft.pkg252.cw.User" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="soft.pkg252.cw.Appointment" target="soft.pkg252.cw.Patient" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="control" source="soft.pkg252.cw.ViewDoctorPage" target="soft.pkg252.cw.Controller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Appointments" source="soft.pkg252.cw.Doctor" target="soft.pkg252.cw.Appointment" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Appointment&gt;"/>
+    <HasRelation name="Perscriptions" source="soft.pkg252.cw.Patient" target="soft.pkg252.cw.Perscription" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Perscription&gt;"/>
+    <HasRelation name="Patient" source="soft.pkg252.cw.Appointment" target="soft.pkg252.cw.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="soft.pkg252.cw.Patient" target="soft.pkg252.cw.Perscription" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="soft.pkg252.cw.ShutdownHook" target="soft.pkg252.cw.Controller" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="soft.pkg252.cw.Doctor" target="soft.pkg252.cw.User"/>
+    <HasRelation name="control" source="soft.pkg252.cw.AdminPage" target="soft.pkg252.cw.Controller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="control" source="soft.pkg252.cw.SecretaryPage" target="soft.pkg252.cw.Controller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="soft.pkg252.cw.Controller" target="soft.pkg252.cw.Patient" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="current_user" source="soft.pkg252.cw.Controller" target="soft.pkg252.cw.User" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="soft.pkg252.cw.DoctorPage" target="soft.pkg252.cw.Patient" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="soft.pkg252.cw.JSONController" target="soft.pkg252.cw.Controller" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="control" source="soft.pkg252.cw.PatientPage" target="soft.pkg252.cw.Controller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="control" source="soft.pkg252.cw.AddMedicinePage" target="soft.pkg252.cw.Controller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="soft.pkg252.cw.Doctor" target="soft.pkg252.cw.Appointment" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="control" source="soft.pkg252.cw.ShutdownHook" target="soft.pkg252.cw.Controller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="patient" source="soft.pkg252.cw.InspectPatientPage" target="soft.pkg252.cw.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="control" source="soft.pkg252.cw.InspectPatientPage" target="soft.pkg252.cw.Controller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="soft.pkg252.cw.Controller" target="soft.pkg252.cw.Appointment" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="control" source="soft.pkg252.cw.LoginScreen" target="soft.pkg252.cw.Controller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="soft.pkg252.cw.Administrator" target="soft.pkg252.cw.User"/>
+    <HasRelation name="History" source="soft.pkg252.cw.Patient" target="soft.pkg252.cw.Appointment" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Appointment&gt;"/>
+    <HasRelation name="control" source="soft.pkg252.cw.GivePerscriptionPage" target="soft.pkg252.cw.Controller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="soft.pkg252.cw.Patient" target="soft.pkg252.cw.Appointment" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="doc" source="soft.pkg252.cw.DoctorPage" target="soft.pkg252.cw.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="control" source="soft.pkg252.cw.AddStaffPage" target="soft.pkg252.cw.Controller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="control" source="soft.pkg252.cw.DoctorPage" target="soft.pkg252.cw.Controller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Appointments" source="soft.pkg252.cw.Patient" target="soft.pkg252.cw.Appointment" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Appointment&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
