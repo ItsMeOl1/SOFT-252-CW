@@ -9,7 +9,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import org.json.simple.JSONArray;
 import com.google.gson.Gson; 
-import com.google.gson.GsonBuilder; 
+import com.google.gson.GsonBuilder;
 
 public class JSONController {
     public static void makeJSON(ArrayList<User> users, String[] perscriptions, int[] medStock, ArrayList<String> requests) {
